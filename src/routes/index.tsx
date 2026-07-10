@@ -62,16 +62,6 @@ function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black" />
 
         <div className="relative z-10 mx-auto flex h-full max-w-[1400px] flex-col justify-end px-6 pb-16 sm:pb-24 lg:px-10 lg:pb-36">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-            className="mb-5 flex items-center gap-3 text-[11px] uppercase tracking-[0.28em] text-white/70 sm:mb-8 sm:gap-4 sm:tracking-[0.5em] lg:mb-10"
-          >
-            <span className="h-px w-12 bg-brand" />
-            24 Yıllık Tecrübe
-          </motion.div>
-
           <h1 className="heading-hero-home max-w-[1200px] text-balance font-display tracking-tight">
             {[
               "Geleceğin",
