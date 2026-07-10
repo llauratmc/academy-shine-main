@@ -61,17 +61,6 @@ function Home() {
         <motion.div className="absolute inset-0 bg-black" style={{ opacity: overlay }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black" />
 
-        {/* Vertical labels */}
-        <div className="absolute left-6 top-1/2 -translate-y-1/2 hidden lg:block">
-          <span className="vertical-label text-muted-foreground">
-            Est. 2001 · Maltepe / İstanbul
-          </span>
-        </div>
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-4">
-          <span className="h-16 w-px bg-white/30" />
-          <span className="vertical-label text-muted-foreground">Kayıtlar Devam Ediyor</span>
-        </div>
-
         <div className="relative z-10 mx-auto flex h-full max-w-[1400px] flex-col justify-end px-6 pb-16 sm:pb-24 lg:px-10 lg:pb-36">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

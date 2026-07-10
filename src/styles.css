@@ -162,15 +162,6 @@
   }
 }
 
-/* Vertical writing helper for side labels */
-@utility vertical-label {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-}
-
 /* Hover elevate */
 @utility elevate {
   transition:
