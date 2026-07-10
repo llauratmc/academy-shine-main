@@ -188,7 +188,41 @@ function About() {
             <div className="text-xs uppercase tracking-[0.4em] text-muted-foreground flex items-center gap-3">
               <span className="h-px w-10 bg-brand" /> Kadro
             </div>
-            <h2 className="heading-section mt-6 max-w-3xl font-display">
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <div className="mt-12 group elevate rounded-2xl border border-brand/30 bg-surface-2/70 overflow-hidden lg:max-w-4xl">
+              <div className="grid sm:grid-cols-[1.1fr_1fr]">
+                <div className="aspect-[4/3] relative bg-gradient-to-br from-black via-surface-2 to-surface grid place-items-center overflow-hidden">
+                  <div
+                    className="absolute inset-0 opacity-40"
+                    style={{
+                      background:
+                        "radial-gradient(circle at 30% 30%, var(--brand), transparent 65%)",
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,transparent_60%,rgba(0,0,0,0.6)_100%)]" />
+                  <span className="relative font-display text-7xl sm:text-8xl tracking-tight text-white/90">
+                    KT
+                  </span>
+                </div>
+                <div className="p-6 sm:p-10 flex flex-col justify-center">
+                  <div className="text-[10px] uppercase tracking-[0.3em] text-brand">
+                    Alt Yapı Gelişim Teknik Sorumlusu
+                  </div>
+                  <div
+                    className="heading-subsection mt-2 font-display"
+                    style={{ textTransform: "none" }}
+                  >
+                    Kaan Tomaç
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <h2 className="heading-section mt-24 max-w-3xl font-display">
               Deneyimli Antrenör Kadromuz.
             </h2>
             <p className="mt-6 max-w-2xl text-muted-foreground leading-relaxed">
@@ -203,7 +237,6 @@ function About() {
               { name: "Büşra Ahlakçı", role: "Antrenör" },
               { name: "Ali Çankaya", role: "Antrenör" },
               { name: "Taner Acar", role: "Antrenör" },
-              { name: "Kaan Tomaç", role: "Antrenör" },
             ].map((c) => {
               const initials = c.name
                 .split(" ")
